@@ -81,4 +81,14 @@ function draw() {
     ctx.fillText("Score: " + score, box, box);
 }
 
-let game = setInterval(draw, 100);
+let game = setInterval(draw, 100);function setDirection(dir) {
+  if (dir === "up" && dy === 0) {
+    dx = 0; dy = -10;
+  } else if (dir === "down" && dy === 0) {
+    dx = 0; dy = 10;
+  } else if (dir === "left" && dx === 0) {
+    dx = -10; dy = 0;
+  } else if (dir === "right" && dx === 0) {
+    dx = 10; dy = 0;
+  }
+}
