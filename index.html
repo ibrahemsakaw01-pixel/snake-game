@@ -5,6 +5,14 @@
     <title>Snake Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<div id="controls">
+  <button class="btn" onclick="setDirection('up')">⬆️</button>
+  <div class="row">
+    <button class="btn" onclick="setDirection('left')">⬅️</button>
+    <button class="btn" onclick="setDirection('down')">⬇️</button>
+    <button class="btn" onclick="setDirection('right')">➡️</button>
+  </div>
+</div>
 <body>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
     <script src="game.js"></script>
